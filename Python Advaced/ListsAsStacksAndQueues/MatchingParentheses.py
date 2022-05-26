@@ -20,14 +20,16 @@ parenthesesStack = Stack()
 setsOfParentheses = list()
 oneSet = ""
 
-for element in algebraicExpression:
-    if element == '(' or element == ')':
-        parenthesesStack.push(algebraicExpression.index(element))
+for index in range(len(algebraicExpression)):
+    element = algebraicExpression[index]
 
-for i in range(parenthesesStack.count()):
-    lastClosingParenthesesIndex = parenthesesStack.pop()
-    lastOpeningParenthesesIndex = parenthesesStack.pop()
+    if element == '(':
+        parenthesesStack.push(index)
+    elif element == ')':
+        for i in range(parenthesesStack.pop(), index + 1):
+            oneSet += algebraicExpression[i]
 
-    
+        setsOfParentheses.append(oneSet)
+        oneSet = ""
 
 print("\n".join(setsOfParentheses))
