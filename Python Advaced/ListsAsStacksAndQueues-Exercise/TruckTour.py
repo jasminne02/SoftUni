@@ -1,7 +1,23 @@
+from collections import deque
+
 petrolPumpsNumber = int(input())
+pumps = deque()
 
 for pump in range(petrolPumpsNumber):
-    command = input().split(' ')
-    petrolAmount = int(command[0])
-    distanceKm = int(command[1])  # distance from that petrol pump to the next
+    pumps.append([int(x) for x in input().split(' ')])
 
+for attempt in range(petrolPumpsNumber):
+    trunk = 0
+    failed = False
+
+    for petrol, distance in pumps:
+        trunk += petrol - distance
+        if trunk < 0:
+            failed = True
+            break
+
+    if failed:
+        pumps.append(pumps.popleft())
+    else:
+        print(attempt)
+        break
