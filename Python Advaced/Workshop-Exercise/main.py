@@ -11,7 +11,7 @@ def player_setup():
     return {first_name: first_symbol, second_name: second_symbol}
 
 
-def board_numeratoin():
+def board_numeration():
     count = 1
     board = []
     for r in range(3):
@@ -100,7 +100,7 @@ for name, symbol in playersInfo.items():
         secondSymbol = symbol
     count += 1
 
-board = board_numeratoin()
+board = board_numeration()
 print_board(board)
 board = clear_board(board)
 
