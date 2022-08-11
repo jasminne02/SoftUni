@@ -1,0 +1,28 @@
+from project.space_station import SpaceStation
+
+
+space_station = SpaceStation()
+items = ['moon sand', 'stones', 'moon crystals', 'rocks']
+space_station.add_planet('Moon', ', '.join(items*2))
+space_station.add_planet('Jupiter', ', '.join(items*12))
+space_station.add_planet('Mercury', ', '.join(items*4))
+space_station.add_astronaut('Biologist', 'Will')
+space_station.add_astronaut('Geodesist', 'Nil')
+space_station.add_astronaut('Meteorologist', 'Mike')
+space_station.add_astronaut('Geodesist', 'Jason')
+space_station.add_astronaut('Biologist', 'William')
+space_station.add_astronaut('Meteorologist', 'Bob')
+# print(space_station.astronaut_repository.astronauts[0].backpack)
+# print(space_station.astronaut_repository.astronauts[1].backpack)
+# print(space_station.astronaut_repository.astronauts[2].backpack)
+# print(space_station.send_on_mission('Moon'))
+# print(space_station.astronaut_repository.astronauts[0].backpack)
+# print(space_station.astronaut_repository.astronauts[1].backpack)
+# print(space_station.astronaut_repository.astronauts[2].backpack)
+print(space_station.send_on_mission('Moon'))
+# print(space_station.send_on_mission('Jupiter'))
+# space_station.recharge_oxygen()
+# print(space_station.send_on_mission('Mercury'))
+print(space_station.astronaut_repository.astronauts[3].backpack)
+print('\n\n')
+print(space_station.report())
