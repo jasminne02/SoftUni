@@ -1,0 +1,39 @@
+body {
+    background-color: rgb(253, 242, 225);
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+}
+
+#navBar {
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(198, 176, 147);
+}
+
+#navBar ul {
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+}
+
+#navBar li {
+    text-align: center;
+    display: inline-block;
+}
+
+#navBar li a{
+    display: block;
+    text-decoration: none;
+    padding: 10px 40px;
+    color: antiquewhite;
+    border-radius: 5px;
+}
+
+#navBar li a:hover{
+    display: block;
+    text-decoration: none;
+    padding: 10px 40px;
+    color:  rgb(198, 176, 147);
+    background-color: antiquewhite;
+    border-radius: 5px;
+}
