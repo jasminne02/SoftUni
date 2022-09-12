@@ -1,0 +1,195 @@
+body{
+    background-color: rgb(126, 163, 255);
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#topbar {
+    padding: 10px 40px;
+    background-color: rgb(30, 58, 128);
+    margin-bottom: -20px;
+}
+
+#topbar p {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(213, 215, 239);
+    float: left;
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+}
+
+#topbar p img {
+    width: 40px;
+    height: 40px;
+    float: left;
+}
+
+nav {
+    font-weight: bold;
+    font-size: 18px;
+    text-align: right;
+    margin-top: 0;
+}
+
+nav li{
+    display: inline-block;
+}
+
+nav li a{
+    display: block;
+    text-decoration: none;
+    text-align: right;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color:  rgb(202, 205, 238);
+}
+
+nav li a:hover{
+    display: block;
+    text-decoration: none;
+    padding: 10px 20px;
+    color:  rgb(30, 58, 128);
+    background-color: rgb(202, 205, 238);
+    border-radius: 5px;
+}
+
+#background-area{
+    width: 100%;
+    height: 90vh;
+    background: linear-gradient(rgba(0, 0, 90, 0.2), rgba(0, 0, 90, 0.3)), url(../ProblemFitnessPage/Images/fitness-girl.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -37px;
+}
+
+#background-area-text{
+    font-size: 36px;
+    padding-top: 200px;
+    padding-left: 350px;
+    color: rgb(202, 205, 238);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#background-area-button{
+    padding: 10px 20px;
+    margin-left: 400px;
+    margin-top: -10px;
+    border-radius: 5px;
+    color: rgb(30, 58, 128);
+    background-color: rgb(202, 205, 238);
+    border: none;
+    border-color: rgb(30, 58, 128);
+    border-style: double;
+}
+
+#background-area-button:hover{
+    color: rgb(202, 205, 238);
+    background-color: rgb(30, 58, 128);
+    border: none;
+    border-color: rgb(202, 205, 238);
+    border-style: double;
+}
+
+main{
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+#main-section{
+    margin-left: 80px;
+    margin-right: 10px;
+    width: 70%;
+    float: left;
+}
+
+#main-section h1{
+    color: rgb(30, 58, 128);
+    text-align: center;
+    margin-right: 10%;
+}
+
+#main-section hr{
+    color: rgb(30, 58, 128);
+    width: 90%;
+    float: left;
+}
+
+#plan{
+    margin-top: 50px;
+    background-color: rgb(112, 120, 211);
+    padding: 20px 20px;
+    border-radius: 5px;
+    width: 20%;
+    text-align: center;
+    float: left;
+    margin-left: 30px;
+    margin-right: 35px;
+    margin-bottom: 100px;
+}
+
+#plan img{
+    height: 150px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+#plan h3{
+    color:  rgb(202, 205, 238);
+}
+
+#plan p{
+    color:  rgb(190, 193, 226);
+}
+
+#plan button{
+    border-radius: 5px;
+    color: rgb(112, 120, 211);
+    background-color: rgb(197, 202, 252);
+    border: none;
+    padding: 5px;
+}
+
+#plan button:hover{
+    background-color: rgb(188, 192, 235);
+}
+
+#side-section{
+    padding-top: 5px;
+    color: rgb(65, 74, 165);
+    margin-right: 160px;
+}
+
+#side-section hr{
+    color: rgb(30, 58, 128);
+}
+
+#side-section ul li{
+    margin-left: 20px;
+    font-size: 18px;
+    text-align: center;
+    list-style: none;
+    padding: 3px;
+    margin: 4px;
+    margin-left: 85%;
+    border-radius: 5px;
+    color:  rgb(89, 97, 193);
+    background-color: rgb(188, 192, 235);
+}
+
+footer{
+    background-color: rgb(30, 58, 128);
+    color: rgb(213, 215, 239);
+    margin-bottom: -100px;
+    padding: 20px;
+}
+
+footer p{
+    margin-right: 100px;
+    margin-left: 700px;
+}
