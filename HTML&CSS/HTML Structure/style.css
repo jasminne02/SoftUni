@@ -1,0 +1,29 @@
+#form{
+    margin: 100px;
+    margin-left: 450px;
+    margin-right: 450px;
+    padding: 50px;
+    border: 2px;
+    border-style: dashed;
+    border-radius: 5px;
+    background-color: rgb(194, 159, 228);
+}
+
+#firstname, #lastname, #emial, #phone, #dropdown, #age, #terms{
+    margin: 10px;
+}
+
+p, #radiobuttons-contacts{
+    float: left;
+}
+
+#radiobuttons-contacts{
+    margin-top: 7px;
+}
+
+#button{
+    padding: 5px;
+    border-radius: 5px;
+    margin: 13px;
+    background-color: rgb(161, 94, 223);
+}

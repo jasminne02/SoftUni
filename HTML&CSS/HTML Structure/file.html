@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Input</title>
+    </head>
+    <body>
+        <section id="form">
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname" name="firstname"><br>
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname" name="lastname"><br>
+            <form id="radiobuttons-gender">
+                <label for="male"><input type="radio" name="gender" id="male" value="Male">Male</label>
+                <label for="female"><input type="radio" name="gender" id="female" value="Female">Female</label>
+                <label for="other"><input type="radio" name="gender" id="other"  value="Other">Other</label>
+            </form>
+            <p>Prefered contact method:</p>
+            <form id="radiobuttons-contacts">
+                <label for="email"><input type="radio" name="contact" id="email" value="Email">Email</label>
+                <label for="phone"><input type="radio" name="contact" id="phone" value="Phone">Phone</label>
+            </form><br><br><br>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email"><br>
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone"><br>
+            <form id="dropdown" action="/action_page.php">
+                <label for="town">Town </label>
+                <select name="town" id="town">
+                    <option value="london">London</option>
+                    <option value="rome">Rome</option>
+                    <option value="paris">Paris</option>
+                    <option value="berlin">Berlin</option>
+                  </select>
+            </form>
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age"><br>
+            <label for="terms">I agree to Terms and Conditions</label>
+            <input type="checkbox" id="terms" name="terms"><br>
+            <input type="submit" value="Submit" id="button"></input>
+        </section>
+    </body>
+</html>
