@@ -1,0 +1,9 @@
+@import 'https://use.fontawesome.com/releases/v5.10.2/css/all.css';
+
+body{
+    margin: 100px;
+}
+
+#first, #second, #third{
+    margin: 50px;
+}

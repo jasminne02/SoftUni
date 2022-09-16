@@ -1,0 +1,18 @@
+@import 'https://use.fontawesome.com/releases/v5.10.2/css/all.css';
+
+#clickme, #email{
+    margin: 40px;
+    width: 100px;
+    height: 50px;
+    border-width: 0.5px;
+}
+
+#clickme{
+    background-color: rgb(126, 237, 126);
+    color: rgb(1, 93, 1);
+}
+
+#email{
+    background-color: rgb(237, 215, 126);
+    color: rgb(93, 81, 1);
+}
