@@ -1,0 +1,42 @@
+body{
+    background-color: rgb(158, 176, 215);
+    padding: 70px;
+    padding-right: 200px;
+    padding-left: 80px;
+}
+
+img{
+    padding: 10px;
+    border: 3px rgb(54, 54, 148) dotted;
+    margin: 50px;
+    margin-left: 150px;
+    display: inline;
+    float: left;
+    width: fit-content;
+}
+
+#pic1{
+    width: 250px;
+    height: 150px;
+}
+
+#pic2{
+    width: 150px;
+    height: 200px;
+    margin-top: 20px;
+    object-fit: cover;
+    object-position: 100% 50;
+}
+
+#pic3{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: 100% 0;
+    margin-right: 0px
+}
+
+#pic4{
+    width: 250px;
+    height: 150px;
+}
