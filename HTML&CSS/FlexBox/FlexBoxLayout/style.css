@@ -1,0 +1,36 @@
+body{
+    background-color: bisque;
+    padding: 30px;
+}
+
+.header, .main, .aside, .footer{
+    color: rgb(79, 67, 53);
+    background-color: rgb(207, 184, 156);
+    display: flex;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+
+.main-section{
+    display: inline-flex;
+}
+
+.main, .aside{
+    padding-bottom: 350px;
+}
+
+.main{
+    margin-right: 30px;
+    padding-right: 1000px;
+}
+
+.aside{
+    padding-right: 300px;
+}
+
+.footer{
+    margin-bottom: 0;
+}
