@@ -10,10 +10,19 @@
     }
     h1{
         text-align: center;
-        padding: 150px;
+    }
+    .tasks-box{
+        font-size: 20px;
+        padding: 50px 600px;
+        line-height: 30px;
     }
 </style>
 <body>
 <h1>{{ title }}</h1><br>
+<div class="tasks-box">
+    {% for task in tasks%}
+    <li>{{ task.name }}</li>
+    {% endfor %}
+</div>
 </body>
 </html>
