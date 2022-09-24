@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+
+<h1>Members</h1>
+
+<table border="1">
+{% for x in members %}
+<tr>
+<td><a href="update/{{ x.id }}">{{ x.id }}</a></td>
+<td>{{ x.firstname }}</td>
+<td>{{ x.lastname }}</td>
+<td><a href="delete/{{ x.id }}">delete</a></td>
+</tr>
+{% endfor %}
+</table>
+
+
+<p>
+<a href="add/">Add member</a>
+</p>
+
+</body>
+</html>
