@@ -1,0 +1,13 @@
+body {
+  background-color: lightblue;
+    font-family: verdana, serif;
+}
+
+.image{
+  width: 400px;
+  height: 250px;
+}
+
+.click {
+  display: block;
+}
