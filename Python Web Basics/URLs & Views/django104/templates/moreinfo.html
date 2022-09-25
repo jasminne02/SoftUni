@@ -1,0 +1,32 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+
+<h1>Members</h1>
+
+<table border="1">
+<tr>
+    <th>Id</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Age</th>
+    <th>Country</th>
+    </tr>
+    <tr>
+    <td>{{ member.id }}</td>
+    <td>{{ member.firstname }}</td>
+    <td>{{ member.lastname }}</td>
+    <td>{{ member.age }}</td>
+    <td>{{ member.country }}</td>
+</tr>
+</table>
+
+<a href="return">Return to Members</a>
+
+</body>
+</html>
