@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+     <h1>
+         Original: {{ title }}: {{ value }}
+     </h1>
+     <h1>
+         Upper: {{ title|upper }}: {{ value }}
+     </h1>
+     <h1>
+         Lowered then capped first: {{ title|lower|capfirst }}: {{ value }}
+     </h1>
+     {{ info.address }}
+     {{ student.get_info }}
+     {{ student_info }}
+     <div>
+         {% if students %}
+             {{ students|join:', ' }}
+         {% else %}
+              No students
+         {% endif %}
+     </div>
+</body>
+</html>
