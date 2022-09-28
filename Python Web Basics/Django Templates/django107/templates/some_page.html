@@ -1,0 +1,10 @@
+{% extends 'base/base.html' %}
+{% load filters %}
+{% load tags %}
+
+{% block page_content %}
+<nav>
+    <a href="{% url 'index' %}">Redirect to home</a>
+</nav>
+    <a href="go-to-homepage/">Go to homepage</a>
+{% endblock %}

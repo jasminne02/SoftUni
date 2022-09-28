@@ -1,0 +1,17 @@
+{% extends 'base/base.html' %}
+{% load filters %}
+{% load tags %}
+
+{% block page_content %}
+    {{ title }}<br>
+    {{ csrf_token }}
+    <br><br>
+    <div>
+        Original: {{ values }}
+    </div>
+    <div>
+        Odd: {{ values|odd }}
+    </div>
+    <br><br>
+    {% student_info student %}
+{% endblock %}
