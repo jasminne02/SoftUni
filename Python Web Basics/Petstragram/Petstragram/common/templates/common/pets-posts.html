@@ -1,4 +1,6 @@
 {% load static %}
+{% for photo in all_photos %}
+
 
 <!-- Start Pet Photos Post Section -->
             <div class="card">
@@ -26,14 +28,16 @@
                             </a>
                             <br>
                             <!-- if the photo has location -->
-                            <span>Bansko, Bulgaria</span>
+                            {% if photo.location %}
+                                <span>{{ photo.location }}</span>
+                            {% endif %}
                         </h3>
                     </div>
                 </div>
                 <!-- End User Details and Image Location -->
 
                 <!-- Start Pet Photo -->
-                <div class="imgBx" id="place the id of the photo here">
+                <div class="imgBx" id="{{ photo.id }}">
                     <img src="{% static 'images/axolotl.jpeg' %}" alt="post" class="cover">
                 </div>
                 <!-- End Pet Photo -->
@@ -44,9 +48,10 @@
                         <div class="left">
                             <!-- Start Like Button -->
                             <span class="heart">
-									<a href="#">
+									<a href="{% url 'like' photo.id %}">
 										<!-- if user has liked the photo -->
-                                        <svg style="color: red"
+                                        {% if photo.like_set.all %}
+                                            <svg style="color: red"
                                              xmlns="http://www.w3.org/2000/svg"
                                              width="24"
                                              height="24"
@@ -62,13 +67,15 @@
                                             </path>
                                         </svg>
                                         <!-- else -->
-                                        <svg aria-label="Like"
+                                        {% else %}
+                                            <svg aria-label="Like"
                                              color="#262626"
                                              fill="#262626"
                                              height="24"
                                              role="img"
                                              viewBox="0 0 48 48"
                                              width="24">
+                                        {% endif %}
                                         <!-- Coordinate path -->
                                         <path d="M34.6 6.1c5.7 0 10.4 5.2 10.4
                                                     11.5 0 6.8-5.9 11-11.5 16S25 41.3 24
@@ -89,7 +96,7 @@
                             <!-- End Like Button -->
 
                             <!-- Start Share Button -->
-                            <a href="">
+                            <a href="{% url 'share' photo.id %}">
                                 <svg aria-label="Share Post" class="_8-yf5 " color="#262626" fill="#262626"
                                      height="24" role="img" viewBox="0 0 48 48" width="24">
                                     <path d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3
@@ -108,32 +115,26 @@
                     <!-- End Like and Share Buttons -->
 
                     <!-- Number of Likes per Photo -->
-                    <p class="likes">203 likes</p>
+                    <p class="likes">{{ photo.like_set.count }}</p>
 
 
                     <!-- Start Tagged Pets -->
-                    <!-- Link to First Tagged Pet Details Page-->
-                    <a href="#">
+                    {% for pet in photo.tagged_pets.all %}
+                        <a href="{% url 'pet-details' "username" pet.slug %}">
                         <p class="message">
-                            <b>Sasho</b>
+                            <b>{{ pet.name }}</b>
                         </p>
                     </a>
-
-                    <!-- Link to Second Tagged Pet Details Page-->
-                    <a href="#">
-                        <p class="message">
-                            <b>Some other fish</b>
-                        </p>
-                    </a>
+                    {% endfor %}
                     <!-- End Tagged Pets -->
 
                     <!-- Link to Photo Details Page -->
-                    <a href="#">
+                    <a href="{% url 'photo-details' photo.pk %}">
                         <h4 class="details">See details</h4>
                     </a>
 
                     <!-- Date of Publication -->
-                    <h5 class="postTime">19/09/2022</h5>
+                    <h5 class="postTime">{{ photo.date_of_publication }}</h5>
 
                     <!-- Start Add Comments Section -->
                     <div class="addComments">
@@ -158,3 +159,4 @@
             </div>
 
             <!-- End Pet Photos Post Section -->
+{% endfor %}
