@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form action="{% url 'index' %}" method="post">
+    {{ form }}
+    <button>Send</button>
+    {% csrf_token %}
+</form>
+<a href="{% url 'images' %}">Go to images</a>
+</body>
+</html>
