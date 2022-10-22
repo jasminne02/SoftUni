@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <!-- Start Add Photo Section -->
+    <div class="edit-delete edit-photo">
+        <h2>Add photo</h2>
+        <!-- Start Add Photo Form -->
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <!-- Add Photo Button -->
+            <button class="add-btn" type="submit">Add Photo</button>
+        </form>
+        <!-- End Add Photo Form -->
+    </div>
+    <!-- End Add Photo Section -->
+
+{% endblock %}
