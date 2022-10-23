@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <main class="main-trainings">
+            <div class="side-section-trainings">
+                <div class="filter">
+                    <form method="post" action="#">
+                        <fieldset>
+                            <h3>Choose training types</h3>
+                            {% for type in all_training_types %}
+                                <div id="element"><label>
+                                    <input type="checkbox" name="class" value="class">
+                                </label>{{ type.name }}</div>
+                            {% endfor %}
+                            <br>
+                            <input type="submit" value="Filter" />
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="filter">
+                    <form method="post" action="#">
+                        <fieldset>
+                            <h3>Price</h3>
+                            <div id="element"><label>
+                                <input type="checkbox" name="class" value="class">
+                            </label>From $10 to $30</div>
+                            <div id="element"><label>
+                                <input type="checkbox" name="class" value="class">
+                            </label>From $30 to $50</div>
+                            <div id="element"><label>
+                                <input type="checkbox" name="class" value="class">
+                            </label>From $50 to $70</div>
+                            <div id="element"><label>
+                                <input type="checkbox" name="class" value="class">
+                            </label>From $70 to $100</div>
+                            <br>
+                            <input type="submit" value="Filter" />
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            <section class="main-section-trainings">
+                <h1>Classes</h1>
+                {% for training in all_trainings %}
+                    <article id="plan">
+                        <img src="{{ training.photo.url }}" alt="fitness class">
+                        <h3>{{ training.name }}</h3>
+                        <p>Price: ${{ training.price }}/month</p>
+                        <button type="button">JOIN NOW</button>
+                    </article>
+                {% endfor %}
+            </section>
+        </main>
+{% endblock %}

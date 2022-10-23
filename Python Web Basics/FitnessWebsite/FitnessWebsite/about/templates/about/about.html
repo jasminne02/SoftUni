@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+     <main class="main-about">
+     <div class="workout-info">
+         <h1>The workout</h1>
+         <div class="line"></div>
+         <p>There is no limit to what you are capable of, physically and mentally. The Limit is about perseverance. The goal is to push yourself past your individual limit.</p>
+         <p>We believe that each person requires unique training for their personal abilities. Our trainers are all certified and able to adapt to your needs, whether you are dealing with an injury or health issue, are pregnant or postpartum or you’re just looking for the ultimate challenge. There’s always a way to train hard and get results.</p>
+         <p>Our classes provide a variety of workouts with movements that are simple, effective and safe, no matter your level. We prioritize proper form and biomechanics with clear instructions. Our goal is to make you feel strong and confident in yourself, no matter your level.</p>
+         <p>We are excited to help you find your limit and push yourself past it. Now let’s do it!</p>
+     </div>
+     <div class="gallery">
+        <h1>Our Photo Gallery</h1>
+        <div class="line"></div>
+        <div class="photo">
+            <img src="{% static 'images/fitness1.jpg' %}" alt="fitness">
+        </div>
+        <div class="photo">
+            <img src="{% static 'images/fitness2.jpg' %}" alt="fitness">
+        </div>
+        <div class="photo">
+            <img src="{% static 'images/fitness3.jpg' %}" alt="fitness">
+        </div>
+        <div class="photo">
+            <img src="{% static 'images/fitness4.jpg' %}" alt="fitness">
+        </div>
+        <div class="photo">
+            <img src="{% static 'images/fitness5.jpg' %}" alt="fitness">
+        </div>
+        <div class="photo">
+            <img src="{% static 'images/fitness6.jpg' %}" alt="fitness">
+        </div>
+        <div class="photo">
+            <img src="{% static 'images/fitness7.jpg' %}" alt="fitness">
+        </div>
+        <div class="photo">
+            <img src="{% static 'images/fitness8.jpg' %}" alt="fitness">
+        </div>
+        <div class="photo">
+            <img src="{% static 'images/fitness9.jpg' %}" alt="fitness">
+        </div>
+     </div>
+     <section class="contact-us">
+        <h1>Contact us</h1>
+        <div class="line"></div>
+        <h3>Email: fitness@mail.com</h3>
+        <h3>Call us: +359 89 0101010</h3>
+        <ul class="icon-bar">
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+     </section>
+     </main>
+{% endblock %}

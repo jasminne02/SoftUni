@@ -1,0 +1,33 @@
+.main-trainers{
+    margin: 10% 10% 100% 10%;
+    color: rgb(14, 31, 74);
+    text-align: center;
+}
+
+.line{
+    background-color: rgb(16, 32, 74);
+    width: 106%;
+    margin-left: -3%;
+    height: 1px;
+    border-radius: 5px;
+}
+
+.card{
+    margin-top: 50px;
+    background-color: rgb(112, 120, 211);
+    padding: 20px 20px;
+    border-radius: 5px;
+    width: 27%;
+    height: 350px;
+    text-align: center;
+    float: left;
+    margin-right: 35px;
+    margin-bottom: 100px;
+    color:  rgb(190, 193, 226);
+}
+
+.card img{
+    height: 200px;
+    width: 100%;
+    border-radius: 5px;
+}

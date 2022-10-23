@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <main>
+        <div class="edit-box">
+            <h1>Edit profile</h1>
+            <form action="#">
+                <div class="data">
+                    <label>First name<input type="text"></label>
+                </div>
+                <div class="data">
+                    <label>Last name<input type="text"></label>
+                </div>
+                <div class="data">
+                    <label>Email<input type="email"></label>
+                </div>
+                <div class="btn">
+                    <div class="inner"></div>
+                    <button type="submit">Edit</button>
+                </div>
+            </form>
+        </div>
+    </main>
+{% endblock %}

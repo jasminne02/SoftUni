@@ -1,0 +1,81 @@
+.main-about{
+    margin-top: 90px;
+    margin-bottom: 130%;
+}
+
+.workout-info{
+    position: absolute;
+    left: 20%;
+    width: 60%;
+    padding: 30px;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(14, 31, 74);
+    background-color: rgba(154, 183, 255, 0.726);
+    border-radius: 5px;
+}
+
+.line{
+    background-color: rgb(16, 32, 74);
+    width: 106%;
+    margin-left: -3%;
+    height: 1px;
+    border-radius: 5px;
+}
+
+.gallery{
+    position: absolute;
+    left: 10%;
+    top: 60%;
+    width: 80%;
+    margin-top: 230px;
+    padding: 30px;
+    font-size: 18px;
+    text-align: center;
+    color: rgb(14, 31, 74);
+}
+
+.gallery .line{
+    margin-bottom: 30px;
+}
+
+.photo{
+    float: left;
+    width: 30%;
+    height: 20%;
+    margin-right: 3.3%;
+    margin-bottom: 3.3%;
+}
+
+.photo img{
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.contact-us{
+    position: absolute;
+    left: 30%;
+    top: 215%;
+    width: 40%;
+    padding: 30px;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(14, 31, 74);
+    background-color: rgba(154, 183, 255, 0.726);
+    border-radius: 5px;
+}
+
+.icon-bar{
+    padding: 4%;
+}
+
+.icon-bar li{
+    display: inline-block;
+    list-style-type: none;
+}
+
+.icon-bar li i{
+    padding-left: 10px;
+    padding-right: 10px;
+}

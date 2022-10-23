@@ -1,0 +1,52 @@
+.info-box{
+    position: absolute;
+    left: 25%;
+    width: 50%;
+    padding: 30px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 50;
+    color: rgb(14, 31, 74);
+    background-color: rgba(154, 183, 255, 0.726);
+    border-radius: 5px;
+}
+
+.profile-link{
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: rgb(14, 31, 74);
+    background-color: rgb(197, 200, 237);
+}
+
+.profile-link:hover{
+    background-color: rgba(202, 205, 238, 0.573);
+    cursor: pointer;
+}
+
+.edit-box{
+    position: absolute;
+    left: 33.3%;
+    width: 30%;
+    padding: 30px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 50;
+    color: rgb(14, 31, 74);
+    background-color: rgba(154, 183, 255, 0.726);
+    border-radius: 5px;
+}
+
+.delete-box{
+    position: absolute;
+    left: 33.3%;
+    width: 30%;
+    padding: 30px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 50;
+    color: rgb(14, 31, 74);
+    background-color: rgba(154, 183, 255, 0.726);
+    border-radius: 5px;
+}

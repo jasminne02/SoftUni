@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <main class="main-trainers">
+        <h1>Trainers</h1>
+        <div class="line"></div>
+        {% for trainer in all_trainers %}
+            <article class="card">
+                <img src="{{ trainer.photo.url }}" alt="trainer">
+                <h3>{{ trainer.first_name }} {{ trainer.last_name }}</h3>
+                <p>{{ trainer.info }}</p>
+            </article>
+        {% endfor %}
+    </main>
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <main class="main-register">
+        <div class="center">
+            <div class="container">
+                <div class="text">
+                    Register Form
+                </div>
+                <form action="#">
+                    <div class="data">
+                        <label>First name<input type="text" required></label>
+                    </div>
+                    <div class="data">
+                        <label>Last name<input type="text" required></label>
+                    </div>
+                    <div class="data">
+                        <label>Email<input type="email" required></label>
+                    </div>
+                    <div class="data">
+                        <label>Password<input type="password" required></label>
+                    </div>
+                    <div class="btn">
+                        <div class="inner"></div>
+                        <button type="submit">login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+{% endblock %}

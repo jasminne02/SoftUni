@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content-header %}
+    <section class="background-area">
+        <div class="header-container">
+            <p id="background-area-text">Get fit with us</p>
+            <a href="{% url 'login' %}" id="background-area-button" style="text-decoration: none">JOIN US NOW</a>
+        </div>
+    </section>
+{% endblock %}
+
+{% block content %}
+
+    <main>
+    <section class="about-container">
+        <h1>ABOUT</h1>
+        <p>Fitness offers you a professional and innovative training program with which you can improve your performance in sports and your fitness in everyday life. Our program is based on training methods from competitive sports and covers the most important athletic performance parameters:</p>
+        <div id="param">
+            <img src="{% static 'images/personal1.jpg' %}" alt="power">
+            <p>power</p>
+        </div>
+        <div id="param">
+            <img src="{% static 'images/zumba1.jpg' %}" alt="speed">
+            <p>speed</p>
+        </div>
+        <div id="param">
+            <img src="{% static 'images/circuit-training4.jpg' %}" alt="endurance">
+            <p>endurance</p>
+        </div>
+        <div id="param">
+            <img src="{% static 'images/kickboxing1.jpg' %}" alt="aquility">
+            <p>agility</p>
+        </div>
+    </section>
+    <section class="about-photos">
+        <a href="{% url 'about' %}" id="about-link">View more info</a>
+        <img id="photo" src="{% static 'images/fitness2.jpg' %}" alt="fitness">
+        <img id="photo" src="{% static 'images/fitness5.jpg' %}" alt="fitness">
+        <img id="photo" src="{% static 'images/fitness9.jpg' %}" alt="fitness">
+        <img id="photo" src="{% static 'images/fitness7.jpg' %}" alt="fitness">
+        <img id="photo" src="{% static 'images/fitness1.jpg' %}" alt="fitness">
+        <img id="photo" src="{% static 'images/fitness4.jpg' %}" alt="fitness">
+    </section>
+    <section class="follow-container">
+        <h1>Follow us on social</h1>
+        <ul class="icon-bar">
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+    </section>
+    </main>
+
+{% endblock %}

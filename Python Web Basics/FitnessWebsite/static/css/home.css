@@ -1,0 +1,121 @@
+.background-area{
+    width: 100%;
+    height: 90vh;
+    background: linear-gradient(rgba(0, 0, 90, 0.2), rgba(0, 0, 90, 0.3)), url(../Images/rope-training1.jpg);
+    background-size: cover;
+    margin-top: 1%;
+}
+
+.header-container{
+    position: absolute;
+    width: 30%;
+    top: 25%;
+    left: 10%;
+    border-radius: 5px;
+}
+
+#background-area-text{
+    font-size: 60px;
+    text-align: center;
+    color: rgb(202, 205, 238);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#background-area-button{
+    margin-left: 35%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: rgb(30, 58, 128);
+    background-color: rgb(202, 205, 238);
+    border-color: rgb(30, 58, 128);
+    border-style: double;
+}
+
+#background-area-button:hover{
+    cursor: pointer;
+    color: rgb(202, 205, 238);
+    background-color: rgb(30, 58, 128);
+    border-color: rgb(202, 205, 238);
+    border-style: double;
+}
+
+.about-container{
+    position: inherit;
+    align-items: center;
+    margin: 5% 30%;
+    text-align: center;
+    font-size: 18px;
+    color: rgb(14, 31, 74);
+}
+
+.about-container #param{
+    float: left;
+    width: 20%;
+    height: 100px;
+    margin: 2%;
+}
+
+.about-container #param img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.about-photos{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin-top: 15%;
+}
+
+#about-link{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(202, 205, 238, 0.953);
+    color: rgb(14, 31, 74);
+    font-size: 26px;
+    text-decoration: none;
+    padding: 22px 34px;
+    border-color:  rgb(14, 31, 74);;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.about-photos #photo{
+    width: 33.33%;
+    height: 100%;
+    float: left;
+}
+
+.about-photos img{
+    width: 100%;
+}
+
+.follow-container{
+    position: inherit;
+    align-items: center;
+    margin-top: 30%;
+    margin-bottom: -30%;
+    text-align: center;
+    font-size: 18px;
+    color: rgb(14, 31, 74);
+}
+
+.icon-bar{
+    margin-top: -30px;
+    padding: 4%;
+}
+
+.icon-bar li{
+    display: inline-block;
+    list-style-type: none;
+}
+
+
+.icon-bar li i{
+    padding-left: 10px;
+    padding-right: 10px;
+}

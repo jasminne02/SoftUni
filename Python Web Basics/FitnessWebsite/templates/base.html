@@ -1,0 +1,46 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+    <link rel="icon" href="{% static 'images/dumbbell-white.png' %}" type="image/icon type">
+    <title>Fitness</title>
+</head>
+
+<body>
+
+<!--Start header section with navigation bar-->
+<header>
+    <section class="navbar">
+        <p>Fitness<img src="{% static 'images/dumbbell-white.png' %}" alt="dumbbell"></p>
+        <nav class="nav-links">
+            <ul>
+                <li class="nav-item"><a href="{% url 'home' %}">HOME</a></li>
+                <li class="nav-item"><a href="{% url 'classes' %}">CLASSES</a></li>
+                <li class="nav-item"><a href="{% url 'trainers' %}">TRAINERS</a></li>
+                <li class="nav-item"><a href="{% url 'about' %}">ABOUT US</a></li>
+                <li class="nav-item"><a href="{% url 'login' %}">LOGIN</a></li>
+            </ul>
+        </nav>
+    </section>
+    {% block content-header %}
+    {% endblock %}
+</header>
+<!--End header section with navigation bar-->
+
+<!-- Starts Main Section -->
+{% block content %}
+{% endblock %}
+<!-- End Main Section -->
+
+<!--Start footer section-->
+<footer class="footer">
+    <p>Copyright ©2022 Fitness Website by Jasmine Y.</p>
+</footer>
+<!--End footer section-->
+
+</body>
+</html>

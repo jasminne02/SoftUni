@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <main>
+        <div class="info-box">
+            <h1>Profile details</h1>
+            <p>Name: Jasmine Y.</p>
+            <p>Email: jasmine@gmail.com</p>
+            <p>Trainings: HIIT, Pilates</p>
+            <p>Join date: 23.12.2022</p>
+            <a href="{% url 'profile-edit' %}" class="profile-link">Edit profile</a>
+            <a href="{% url 'profile-delete' %}" class="profile-link">Delete profile</a>
+        </div>
+    </main>
+{% endblock %}
