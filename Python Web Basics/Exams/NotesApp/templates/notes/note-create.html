@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="body">
+        <h1>Add Note</h1>
+
+        <div class="form">
+            <form method="POST" action="{% url 'add note' %}">
+                {{ form }}
+                <input type="submit" value="Publish"/>
+                {% csrf_token %}
+            </form>
+        </div>
+    </div>
+{% endblock %}
