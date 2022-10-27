@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="body">
+
+        <h1>Enter your data</h1>
+        <div class="form">
+            <form method="POST" action="{% url 'home' %}">
+                {{ form }}
+                <input type="submit" value="Submit">
+                {% csrf_token %}
+            </form>
+        </div>
+
+    </div>
+{% endblock %}

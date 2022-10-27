@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="body">
+
+        <h1>Are you sure you want to delete your profile?</h1>
+        <form method="POST" action="{% url 'profile delete' %}">
+            {{ form }}
+            <button class="delete">Confirm</button>
+            {% csrf_token %}
+        </form>
+
+    </div>
+{% endblock %}

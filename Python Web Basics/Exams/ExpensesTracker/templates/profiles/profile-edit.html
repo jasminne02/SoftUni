@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="body">
+
+        <h1>Enter your new data</h1>
+        <div class="form">
+            <form method="POST" action="{% url 'profile edit' %}">
+                {{ form }}
+                <input type="submit" value="Edit">
+                {% csrf_token %}
+            </form>
+        </div>
+
+    </div>
+{% endblock %}
