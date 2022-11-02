@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>{{ title }}</h1>
+From CBV
+
+<ul>
+    {% for employee in employees %}
+        <li>{{ employee.full_name }}</li>
+    {% endfor %}
+</ul>
+</body>
+</html>
