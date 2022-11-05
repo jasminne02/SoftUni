@@ -1,0 +1,62 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>Calorie Counter</title>
+    <link rel="stylesheet" href="{% static 'login.css' %}"/>
+</head>
+
+<body>
+<div class="main-container">
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <a href="" id="title">Calorie Counter</a>
+            <ul>
+                <!--Only for user with created profile-->
+                <li><a href="">Your Calories</a></li>
+                <li><a href="">Food Plans</a></li>
+                <li><a href="">About</a></li>
+                <!--Only for not loggin user-->
+                <li><a href="">Login</a></li>
+                <!--Only for user with created profile-->
+                <li><a href="">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- End Navigation Bar -->
+
+    <!-- Main Content -->
+    <main class="main-register">
+        <div class="center">
+            <div class="container">
+                <div class="text">
+                    Register Form
+                </div>
+                <form  method="post" action="{% url 'register' %}">
+                    {{ form }}
+                    {% csrf_token %}
+                    <div class="btn">
+                        <div class="inner"></div>
+                        <button type="submit">login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div>
+            &copy;Calorie Counter | Jasmine Y.
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+</div>
+</body>
+</html>

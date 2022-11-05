@@ -1,0 +1,68 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>Calorie Counter</title>
+    <link rel="stylesheet" href="{% static 'home.css' %}"/>
+</head>
+
+<body>
+<div class="main-container">
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="nav">
+            <a href="" id="title">Calorie Counter</a>
+            <ul>
+                <!--Only for user with created profile-->
+                <li><a href="">Your Calories</a></li>
+                <li><a href="{% url 'logout' %}">Logout</a></li>
+                <li><a href="{% url 'login' %}">Login</a></li>
+                <!--Only for not loggin user-->
+                <li><a href="{% url 'register' %}">Register</a></li>
+                <!--Only for user with created profile-->
+                <li><a href="">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- End Navigation Bar -->
+
+    <!-- Main Content -->
+    <main>
+        <div class="home-banner">
+            <img src="{% static '/images/banner.jpg' %}" alt="eat healthy">
+        </div>
+        <div class="content">
+            <h2>You don’t have to eat less, you just have to eat right.</h2>
+            <p>Eating less is not going to make you healthy. It sure can make you skinny fat, which is not healthy either. Eat. But choose nutritious foods and practice portion control.</p>
+        </div>
+        <div class="content-image">
+            <img src="{% static '/images/food.jpg' %}" alt="food">
+        </div>
+        <div class="content">
+            <h2>Health is a relationship between you and your body.</h2>
+            <p>The middleman is food. Depending on the type of food you consume, your health will either improve or deteriorate.</p>
+        </div>
+        <div class="content-image">
+            <img src="{% static '/images/food.jpg' %}" alt="food">
+        </div>
+        <div class="content">
+            <h2>Moderation. Small helpings. Sample a little bit of everything. These are the secrets of happiness and good health.</h2>
+            <p>Eating healthy doesn’t mean you have to deprive yourself of the various, delicious food options. There’s no harm in tasting a little bit of everything. Once again, portion control is the key.</p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div>
+            &copy;Calorie Counter | Jasmine Y.
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+</div>
+</body>
+</html>
