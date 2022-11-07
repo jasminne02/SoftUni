@@ -1,0 +1,77 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>Calorie Counter</title>
+    <link rel="stylesheet" href="{% static 'login.css' %}"/>
+</head>
+
+<body>
+<div class="main-container">
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <a href="" id="title">Calorie Counter</a>
+            <ul>
+                <!--Only for user with created profile-->
+                <li><a href="">Your Calories</a></li>
+                <li><a href="">Food Plans</a></li>
+                <li><a href="">About</a></li>
+                <!--Only for not loggin user-->
+                <li><a href="">Login</a></li>
+                <!--Only for user with created profile-->
+                <li><a href="">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- End Navigation Bar -->
+
+    <!-- Main Content -->
+    <main class="main-register">
+        <div class="center">
+            <div class="container">
+                <div class="text">
+                    Register Form
+                </div>
+                <form method="post">
+                    {% csrf_token %}
+                    <div class="data">
+                        <label>Username{{ form.username }}</label>
+                        <div class="error">{{ form.username.errors }}</div>
+                    </div>
+                    <div class="data">
+                        <label>Birthday {{ form.birthday }}</label>
+                        <div class="error">{{ form.birthday.errors }}</div>
+                    </div>
+                    <div class="data">
+                        <label>Password {{ form.password1 }}</label>
+                        <div class="error">{{ form.password1.errors }}</div>
+                    </div>
+                    <div class="data">
+                        <label>Password confirmation {{ form.password2 }}</label>
+                        <div class="error">{{ form.password2.errors }}</div>
+                    </div>
+                    <div class="btn">
+                        <div class="inner"></div>
+                        <button type="submit">Register</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div>
+            &copy;Calorie Counter | Jasmine Y.
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+</div>
+</body>
+</html>
